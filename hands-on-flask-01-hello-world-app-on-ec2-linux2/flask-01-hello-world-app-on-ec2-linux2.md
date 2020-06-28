@@ -86,7 +86,7 @@ sudo pip3 install flask
 
 ```bash
 pip3 list
-```bash
+```
 
 ## Part 3 - Write a Simple Hello World Web Application on GitHub Repo
 
@@ -97,7 +97,7 @@ pip3 list
 - Import Flask module.
 
 ```python
-from flask import Flask`
+from flask import Flask
 ```
 
 - Create an object named `app` from imported Flask module.
