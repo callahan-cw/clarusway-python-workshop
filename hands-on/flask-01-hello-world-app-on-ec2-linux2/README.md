@@ -90,7 +90,7 @@ pip3 list
 
 ## Part 3 - Write a Simple Hello World Web Application on GitHub Repo
 
-- Create folder named `hands-on-flask-01-hello-world-app-on-ec2-linux2` within `clarusway-python-workshop` repo
+- Create folder named `flask-01-hello-world-app-on-ec2-linux2` within `clarusway-python-workshop/hands-on` repo
 
 - Create python file named `hello-world-app.py`
 
@@ -130,7 +130,7 @@ if __name__=='__main__':
     app.run('0.0.0.0', port=80)
 ```
 
-- Save the complete code as `hello-world-app.py` file under `hands-on-flask-01-hello-world-app-on-ec2-linux2` folder.
+- Save the complete code as `hello-world-app.py` file under `hands-on/flask-01-hello-world-app-on-ec2-linux2` folder.
 
 ```python
 from flask import Flask
@@ -165,7 +165,7 @@ git push
 - Download the web application file from GitHub repo.
 
 ```bash
-wget https://raw.githubusercontent.com/callahan-cw/clarusway-python-workshop/master/hands-on-flask-01-hello-world-app-on-ec2-linux2/hello-world-app.py
+wget https://raw.githubusercontent.com/callahan-cw/clarusway-python-workshop/master/hands-on/flask-01-hello-world-app-on-ec2-linux2/hello-world-app.py
 ```
 
 - Run the web application
