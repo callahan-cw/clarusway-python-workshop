@@ -217,7 +217,16 @@ if __name__ == '__main__':
 
 - Add and commit all changes on local repo
 
+```bash
+git add .
+git commit -m 'added flask 02 hands-on'
+```
+
 - Push `app.py`, `greet.html`, `list10.html`, `evens.html`, and `mytext.txt` to remote repo `clarusway-python-workshop` on GitHub.
+
+```bash
+git push
+```
 
 ## Part 4 - Run the Hello World App on EC2 Instance
 
