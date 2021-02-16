@@ -54,17 +54,6 @@ ds.append(eng_level_dict[eng_level]["ds"])
 aws.append(eng_level_dict[eng_level]["aws"])
 fs.append(eng_level_dict[eng_level]["fs"])
 
-job_urgency_dict = {"Very urgent": {"ds": 1, "aws": 3, "fs": 2},
-                    "Urgent": {"ds": 2, "aws": 3, "fs": 1},
-                    "So so": {"ds": 2, "aws": 1, "fs": 3},
-                    "No Urgency": {"ds": 3, "aws": 1, "fs": 2}}
-
-job_urgency = st.selectbox("Select your finding job urgency", list(job_urgency_dict.keys()))
-
-ds.append(job_urgency_dict[job_urgency]["ds"])
-aws.append(job_urgency_dict[job_urgency]["aws"])
-fs.append(job_urgency_dict[job_urgency]["fs"])
-
 it_back_dict = {"Advanced": {"ds": 2, "aws": 1, "fs": 3},
                 "High Intermediate": {"ds": 3, "aws": 1, "fs": 2},
                 "Intermediate": {"ds": 1, "aws": 3, "fs": 2},
@@ -87,9 +76,11 @@ url_dict = {"Data Science": "https://clarusway.com/data-science/",
             "Full Stack Development": "https://clarusway.com/full-stack-developer/"}
 
 if st.button("Recommend"):
-    if all([ch2, ch3, ch4]):
+    if all([ch1, ch2, ch3, ch4]):
         st.success(f"You can pass IT Fundamentals Program and We recommend you '{result}' Program.")
         path_link = "<a href='"+url_dict[result]+"'>Go to '"+result+"' page</a>"
+        # path_link = "<button name='button' onclick='http://www.google.com'>Click me</button>"
+        # path_link = "<button name='" + result + "' onclick='" + url_dict[result] + "'>" + result + "</button>"
         st.markdown(path_link, unsafe_allow_html=True)
     else:
         st.error("We recommend you 'IT Career Programs for Beginners'")
